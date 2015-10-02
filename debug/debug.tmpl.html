@@ -1,0 +1,76 @@
+<if test="{{ false }}">
+	TOTO
+<else>
+	HEY
+</if>
+
+
+<!--!
+{{ true ? true ? 1 : 2 : 3 }}
+{{ true ? false ? 1 : 2 : 3 }}
+{{ false ? true ? 1 : 2 : 3 }}
+
+<for key='{{ "k" }}' value="a" in="{{ 'arr' }}">
+	*** {{ k }} : {{ a }} ***
+<else>
+	empty
+</for>
+
+<IF test="{{ arr }}">
+	Mr
+<ELIF test="{{ true }}">
+	Dr
+<ELSE>
+	Mrs
+</IF>
+
+<extends template="{{ t1 }}">
+
+
+<block name="{{ 'toto' }}">
+	EXTENDED
+</block>
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+{{ 'TATA'|lower }}
+
+
+<extends template="myTemplate">
+
+<block name="myBlock">
+	<span class="hide">
+		{{ t('myTag', 'fr') }}
+	</span>
+</block>
+
+<include template="myTemplate">
+
+{{ 'TOTO'|lower }}
+{{ - 33 + (-2) }}
+{{ toto['meme'](32, 'hello' ~ 'kiou') }}
+
+{{ shortArray[1] }}
+{{ shortArray[1] }}
+
+
+<IF test="{{ true }}"  >
+	Mr
+<ELIF test="{{ true }}">
+	<If test="{{ true }}">
+		Dr
+	</If>
+<ELSE>
+	Mrs
+</IF>
+{{ (32.41 + 12) ~ 'toto' }}
+!
+
+<for key="k" value="a" in="arr">
+	*** {{ k }} : {{ a }} ***
+<else>
+	empty
+</for>
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->

@@ -1,0 +1,43 @@
+
+enum Type
+{
+	TEXT,
+
+	EXPR,
+	SAFE_EXPR,
+
+	OPERATOR,
+
+	NUMBER,
+	STRING,
+	BOOLEAN,
+	NIL,
+	NAME,
+	TMPL,
+	FUNC,
+	MAP,
+	ARG,
+
+	TOKEN,
+
+	OPEN_BRACKET,
+	CLOSE_BRACKET,
+	OPEN_PARENTHESIS,
+	CLOSE_PARENTHESIS,
+
+	OPEN_TAG_START,
+	OPEN_TAG_END,
+	CLOSE_TAG,
+	ATTR_NAME,
+	ATTR_START,
+	ATTR_END,
+	EXPR_START,
+	EXPR_END,
+}
+
+
+interface Token
+{
+	type: Type;
+	value?: any;
+}
